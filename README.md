@@ -2,7 +2,7 @@
 This pipeline takes a selection of NCBI refseq IDs (and optionally personal genome files), and identifies gene expansions and contractions for each species by running CAFE. 
 
 ### Important Files to View
-1) [Main.alt.nf]([https://github.com/lewisrevely/Goatee](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf)): This is the main file within nextflow that orchestrates the seuqence of programmes from an input file and provides outputs
+1) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the seuqence of programmes from an input file and provides outputs
 2) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
 3) [Example.All.csv](https://github.com/lewisrevely/Goatee/blob/main/example.csv): This is an example input file made up of NCBI refseq IDs 
 
