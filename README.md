@@ -24,3 +24,5 @@ I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs
 nextflow run main.alt.nf -resume -profile myriad -bg --input input_refined_species.csv
 ```
 
+### We can add modules to this 
+[Example_module.txt](https://github.com/lewisrevely/Goatee/blob/main/example_module.txt): We could add a module that runs HAPpy-ABCENTH, a programme for more accurate gene family annotation
