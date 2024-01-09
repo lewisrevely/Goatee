@@ -1,5 +1,5 @@
 # Nextflow Pipeline to Run Non-Model Organism Gene Evolution With CAFE
-This pipeline takes a selection of NCBI refseq IDs and denovo genomes, and identifies gene expansions and contractions for each species by running CAFE. 
+This pipeline takes a selection of NCBI refseq IDs and denovo genomes, and identifies gene expansions and contractions across a phylogeny by running CAFE (Computational analysis of family evolution). 
 This github repository is forked version of the main pipeline: https://github.com/chriswyatt1/Goatee 
 
 ### Important Files to View
