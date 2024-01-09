@@ -21,12 +21,21 @@ include { DOWNLOAD_NCBI } from './modules/download_ncbi.nf'
 include { GFFREAD } from './modules/gffread.nf'
 include { ORTHOFINDER } from './modules/orthofinder.nf'
 include { CAFE } from './modules/cafe.nf'
+
+Channel
+    .fromPath(params.input)
+    .splitCsv()
+    .branch { 
+        ncbi: it.size() == 2 
+        local: it.size() == 3
+    }
+    .set { input_type }
  
 workflow {
  
-	DOWNLOAD_NCBI ( params.input )
+	DOWNLOAD_NCBI ( input_type.ncbi  )
  
-	GFFREAD ( DOWNLOAD_NCBI.out.genome )
+	GFFREAD ( DOWNLOAD_NCBI.out.genome.mix(input_type.local) )
  
 	ORTHOFINDER ( GFFREAD.out.proteins )
  
