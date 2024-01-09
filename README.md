@@ -1,11 +1,13 @@
 # Nextflow Pipeline to Run Non-Model Organism Gene Evolution With CAFE
 This pipeline takes a selection of NCBI refseq IDs (and optionally denovo gneomes), and identifies gene expansions and contractions for each species by running CAFE. 
+This github repository is forked version of the main pipeline: https://github.com/chriswyatt1/Goatee 
 
 ### Important Files to View
 1) [Example.All.csv](https://github.com/lewisrevely/Goatee/blob/main/example.csv): This is an example input file made up of NCBI refseq IDs
-2) 
-3) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the seuqence of programmes from an input file and provides outputs
+2) [refined_species.csv](https://github.com/lewisrevely/Goatee/blob/main/Refined_species.csv): This is the input file I used to run this pipeline
+3) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the sequence of programmes from an input file and provides outputs
 4) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
+5) [CAFE_summary.txt](https://github.com/lewisrevely/Goatee/blob/main/CAFE_summary.txt): This is an example of one of the outputs from this pipeline
 
 
 
@@ -17,8 +19,8 @@ The pipeline can be run on just NCBI refseq IDs
 nextflow run main.alt.nf -resume -profile myriad -bg --input Example.All.csv 
 ```
 ### A run on both denovo genomes and NCBI refseq IDs 
-This is an example of a line of code that was used to run a mix of NCBI refseq IDs of some wasp species alongside species which we had the gff and fasta files ourselves. This would require the main.nf file to be amended to allow personal genome files to be included
+I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs 
 ```
-nextflow run main.nf -resume -profile myriad -bg --input input_refined_species.csv
+nextflow run main.alt.nf -resume -profile myriad -bg --input input_refined_species.csv
 ```
 
