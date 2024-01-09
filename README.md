@@ -3,10 +3,9 @@ This pipeline takes a selection of NCBI refseq IDs and denovo genomes, and ident
 This github repository is forked version of the main pipeline: https://github.com/chriswyatt1/Goatee 
 
 ### Important Files to View
-1) [Example.All.csv](https://github.com/lewisrevely/Goatee/blob/main/example.csv): This is an example input file made up of NCBI refseq IDs
-2) [Refined_species.csv](https://github.com/lewisrevely/Goatee/blob/main/Refined_species.csv): This is the input file I used to run this pipeline
-3) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the sequence of programmes from an input file and provides outputs
-4) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
+1) [Refined_species.csv](https://github.com/lewisrevely/Goatee/blob/main/Refined_species.csv): This is the input file I used to run this pipeline
+2) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the central nextflow script that defines the workflow
+3) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
 
 ### How I ran this pipeline
 I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs 
