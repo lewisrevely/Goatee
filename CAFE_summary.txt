@@ -1,11 +1,7 @@
-Total_HOGs_significant	Expansion_HOGs_significant	Contraction_HOGs_significant	Expansion_genes_significant	Contraction_genes_significant	Expansion_HOGs_total	Contraction_HOGs_total
-4	178	21	157	48	-159	31	312
-P_sulcifer	406	251	155	440	-160	1016	249
-M_mexicanus	101	94	7	201	-16	876	1213
-P_exclamens	125	119	6	318	-19	334	529
-P_Dominula	301	72	229	137	-251	118	438
-B_mellifica	41	28	13	121	-48	135	124
-5	53	36	17	70	-49	71	481
-P_fuscatus	84	67	17	318	-36	120	902
-7	14	14	0	16	0	16	140
-8	11	1	10	2	-23	4	24
+Species     Expanded Contracted
+P_sulcifer	251	     155	
+M_mexicanus	94	     7	
+P_exclamens	119	     6	
+P_Dominula	72	     229	
+B_mellifica 28	     13	
+P_fuscatus	67	     17	
