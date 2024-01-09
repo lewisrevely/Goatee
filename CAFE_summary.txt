@@ -1,4 +1,4 @@
-Species        Expanded Contracted
+Species          Expanded   Contracted
 P_sulcifer	251	     155	
 M_mexicanus	94	     7	
 P_exclamens	119	     6	
