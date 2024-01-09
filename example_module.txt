@@ -1,0 +1,18 @@
+process HAPpy_ABCENTH {
+    tag "$sample_id"
+    label 'happy_abcenth_process'
+
+    input:
+    tuple val(sample_id), path(fasta), path(gff)
+
+    
+    output:
+    path 'enhanced_annotations/*'
+
+    script:
+    """
+    HAPpy --genome ${fasta} --ref_genome ${fasta} \\
+    --annotations ${gff} --cutoff 0.45 \\
+    --search_mode exons --annotator ABCENTH -o enhanced_annotations/
+    """
+}
