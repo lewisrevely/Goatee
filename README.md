@@ -8,15 +8,7 @@ This github repository is forked version of the main pipeline: https://github.co
 3) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the sequence of programmes from an input file and provides outputs
 4) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
 
-
-
-### Example run on NCBI refseq IDs
-The pipeline can be run on just NCBI refseq IDs 
-
-```
-nextflow run main.alt.nf -resume -profile myriad -bg --input Example.All.csv 
-```
-### A run on both denovo genomes and NCBI refseq IDs 
+### How I ran this pipeline
 I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs 
 ```
 nextflow run main.alt.nf -resume -profile myriad -bg --input Refined_species.csv
