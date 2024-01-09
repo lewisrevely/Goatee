@@ -1,5 +1,5 @@
 # Nextflow Pipeline to Run Non-Model Organism Gene Evolution With CAFE
-This pipeline takes a selection of NCBI refseq IDs (and optionally denovo gneomes), and identifies gene expansions and contractions for each species by running CAFE. 
+This pipeline takes a selection of NCBI refseq IDs (and optionally denovo genomes), and identifies gene expansions and contractions for each species by running CAFE. 
 This github repository is forked version of the main pipeline: https://github.com/chriswyatt1/Goatee 
 
 ### Important Files to View
@@ -7,8 +7,6 @@ This github repository is forked version of the main pipeline: https://github.co
 2) [input_refined_species.csv](https://github.com/lewisrevely/Goatee/blob/main/Refined_species.csv): This is the input file I used to run this pipeline
 3) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the main file within nextflow that orchestrates the sequence of programmes from an input file and provides outputs
 4) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
-5) [CAFE_summary.txt](https://github.com/lewisrevely/Goatee/blob/main/CAFE_summary.txt): This is an example of one of the outputs from this pipeline
-
 
 
 
@@ -23,6 +21,9 @@ I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs
 ```
 nextflow run main.alt.nf -resume -profile myriad -bg --input input_refined_species.csv
 ```
+
+### There are a number of outputs from running this pipeline 
+[CAFE_summary.txt](https://github.com/lewisrevely/Goatee/blob/main/CAFE_summary.txt): This is an example of one of the outputs from this pipeline
 
 ### We can add modules to this 
 [Example_module.txt](https://github.com/lewisrevely/Goatee/blob/main/example_module.txt): We could add a module that runs HAPpy-ABCENTH, a programme for more accurate gene family annotation
