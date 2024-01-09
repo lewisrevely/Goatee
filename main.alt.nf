@@ -1,7 +1,7 @@
 params.input= "data/Example.csv"
 params.outdir = "results"
  
-//For CPU and Memory of each process: see conf/docker.config
+//Log info that is printed on your screen when running
  
 log.info """\
 ===================================
@@ -14,13 +14,15 @@ out directory                        : ${params.outdir}
 """
  
 //================================================================================
-// Include modules
+// Include modules: declaring where the modules are 
 //================================================================================
  
 include { DOWNLOAD_NCBI } from './modules/download_ncbi.nf'
 include { GFFREAD } from './modules/gffread.nf'
 include { ORTHOFINDER } from './modules/orthofinder.nf'
 include { CAFE } from './modules/cafe.nf'
+
+// A channel to seperate NCBI and denovo samples
 
 Channel
     .fromPath(params.input)
@@ -30,7 +32,9 @@ Channel
         local: it.size() == 3
     }
     .set { input_type }
- 
+
+// The workflow of the pipeline
+
 workflow {
  
 	DOWNLOAD_NCBI ( input_type.ncbi  )
