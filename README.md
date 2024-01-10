@@ -5,7 +5,6 @@ This github repository is forked version of the main pipeline: https://github.co
 ### Important Files to View
 1) [Refined_species.csv](https://github.com/lewisrevely/Goatee/blob/main/Refined_species.csv): This is the input file I used to run this pipeline
 2) [Main.alt.nf](https://github.com/lewisrevely/Goatee/blob/main/main.alt.nf): This is the central nextflow script that defines the workflow
-3) [nextflow.config](https://github.com/lewisrevely/Goatee/edit/main/nextflow.config): This is a configuration file to define where the pipeline is being run
 
 ### How I ran this pipeline
 I ran the pipeline with a mix of denovo genomes and NCBI refseq IDs 
