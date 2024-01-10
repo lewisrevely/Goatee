@@ -11,7 +11,7 @@ process HAPpy_ABCENTH {
 
     script:
     """
-    HAPpy --genome ${fasta} --ref_genome ${fasta} \\
+    HAPpy --genome ${fasta} --ref_genome ${ref_gonome_fasta} \\
     --annotations ${gff} --cutoff 0.45 \\
     --search_mode exons --annotator ABCENTH -o enhanced_annotations/
     """
