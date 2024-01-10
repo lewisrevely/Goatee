@@ -16,4 +16,4 @@ nextflow run main.alt.nf -resume -profile myriad -bg --input Refined_species.csv
 [CAFE_summary.csv](https://github.com/lewisrevely/Goatee/blob/main/CAFE_summary.csv): This is an example of one of the outputs from this pipeline
 
 ### We can add modules to this 
-[Example_module.txt](https://github.com/lewisrevely/Goatee/blob/main/example_module.txt): We could add a module that runs HAPpy-ABCENTH, a programme for more accurate gene family annotation
+We can add novel modules such as GO analysis and more precise annotation of genes. 
